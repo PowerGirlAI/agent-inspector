@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Inspector for Copilot Studio — Privacy policy</title>
+<style>
+body{font-family:Poppins,"Segoe UI",system-ui,sans-serif;max-width:760px;margin:48px auto;padding:0 20px;color:#1b1b20;line-height:1.6;background:#f1f1f1}
+main{background:#fff;border-radius:16px;padding:32px 36px}
+h1{color:#211f54;font-size:28px;line-height:1.2;margin-top:0} h2{color:#211f54;font-size:18px;margin:26px 0 6px}
+a{color:#211f54} .meta{color:#6b6b78;font-size:14px}
+</style></head><body><main>
+<h1>Agent Inspector — Privacy policy</h1>
+<p>Agent Inspector is an unofficial community browser extension. It is not affiliated with or endorsed by Microsoft.</p>
+<h2>What it reads</h2>
+<ul>
+<li>The URL of the active Copilot Studio tab (environment and agent IDs).</li>
+<li>Bot Framework activities that the Copilot Studio test chat already exchanges in your browser (messages, events, traces), so they can be shown in the side panel.</li>
+<li>Agent definition data (agent, topics, tools, flows, connection references, solutions, evaluation records) from the Dataverse environment you are working in, using read-only requests made as you.</li>
+</ul>
+<h2>How it authenticates</h2>
+<ul>
+<li>It reuses the access token that Copilot Studio itself sends to your Dataverse environment, or your existing browser session with that environment.</li>
+<li>Tokens are kept only in the browser&#x27;s in-memory session storage and are discarded when the browser closes. They are never written to disk.</li>
+</ul>
+<h2>What it stores</h2>
+<ul>
+<li>In memory (cleared when the browser closes): captured activities for open tabs, short-lived tokens.</li>
+<li>On disk (browser extension storage): the Dataverse URL detected for each environment and your settings.</li>
+</ul>
+<h2>What it sends</h2>
+<ul>
+<li>Nothing to the developer or any third party. The only network requests go to Microsoft endpoints you are already using: your Dataverse environment and the Power Platform admin API (to look up the environment&#x27;s Dataverse URL).</li>
+<li>No analytics, no tracking, no remote code.</li>
+</ul>
+<h2>What it changes</h2>
+<ul>
+<li>Nothing. The extension never creates, updates or deletes data in Copilot Studio or Dataverse.</li>
+</ul>
+<p>Contact: Magdalena Kączkowska (PowerGirlAI) — <a href="https://www.linkedin.com/in/magdalena-kaczkowska-powergirl">LinkedIn</a></p>
+<p class="meta">Last updated: 21 October 2026 · Applies to Agent Inspector for Copilot Studio (Microsoft Edge extension) version 1.0 and later.</p>
+</main></body></html>
