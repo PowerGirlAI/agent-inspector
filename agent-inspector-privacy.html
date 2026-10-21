@@ -14,11 +14,14 @@ a{color:#211f54} .meta{color:#6b6b78;font-size:14px}
 <li>The URL of the active Copilot Studio tab (environment and agent IDs).</li>
 <li>Bot Framework activities that the Copilot Studio test chat already exchanges in your browser (messages, events, traces), so they can be shown in the side panel.</li>
 <li>Agent definition data (agent, topics, tools, flows, connection references, solutions, evaluation records) from the Dataverse environment you are working in, using read-only requests made as you.</li>
+<li>If Dynamics 365 Contact Center (Omnichannel) is installed: workstreams, queues and their members, context variables, the agent&#x27;s application user and related solutions. For the optional access check: the name, email, roles, team roles and queues of a person you search for, and their access rights to the agent. All read-only, shown only in your side panel and never stored.</li>
 </ul>
 <h2>How it authenticates</h2>
 <ul>
 <li>It reuses the access token that Copilot Studio itself sends to your Dataverse environment, or your existing browser session with that environment.</li>
 <li>Tokens are kept only in the browser&#x27;s in-memory session storage and are discarded when the browser closes. They are never written to disk.</li>
+<li>You can turn token reuse off in Settings → Sign-in. Stored tokens are then deleted immediately and only your browser session is used.</li>
+<li>Session cookies, passwords and refresh tokens are never read.</li>
 </ul>
 <h2>What it stores</h2>
 <ul>
@@ -32,8 +35,8 @@ a{color:#211f54} .meta{color:#6b6b78;font-size:14px}
 </ul>
 <h2>What it changes</h2>
 <ul>
-<li>Nothing. The extension never creates, updates or deletes data in Copilot Studio or Dataverse.</li>
+<li>Nothing. The extension never creates, updates or deletes data in Copilot Studio or Dataverse, and never changes routing, queues, users or roles.</li>
 </ul>
 <p>Contact: Magdalena Kączkowska (PowerGirlAI) — <a href="https://www.linkedin.com/in/magdalena-kaczkowska-powergirl">LinkedIn</a></p>
-<p class="meta">Last updated: 21 October 2026 · Applies to Agent Inspector for Copilot Studio (Microsoft Edge extension) version 1.0 and later.</p>
+<p class="meta">Last updated: 21 October 2026 (version 1.1)</p>
 </main></body></html>
